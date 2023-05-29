@@ -58,7 +58,7 @@ defmodule SleepybunnyofficialWeb.PageController do
               Hello! \(^-^)/
               <br/>
               <br/>
-              Thank you so much for checking out my app Sleep Bunny. :)
+              Thank you so much for visiting my app Sleepy Bunny. :)
               <br/>
               I've always been a huge fan of these kinds of apps and I figured I make one on my own to practice Elixir and Phoenix.
               <br/>
