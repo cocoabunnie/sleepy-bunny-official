@@ -24,7 +24,7 @@ defmodule SleepybunnyofficialWeb.PageController do
             </svg>
           </button>
 
-          <input class="appearance-none bg-darkblue h-[5px]" id={"#{@name}-volume"} type="range" min="1" max="100" value="100" phx-value-name={"#{@name}"} phx-hook="ChangeAudioVolume" phx-value-audioid={"audio-#{@name}"}>
+          <input class="appearance-none bg-darkblue h-[5px]" id={"#{@name}-volume"} type="range" min="1" max="100" value="100" phx-value-name={"#{@name}"} phx-click="ChangeAudioVolume" phx-hook="ChangeAudioVolume" phx-value-audioid={"audio-#{@name}"}>
         </div>
       </div>
     """
