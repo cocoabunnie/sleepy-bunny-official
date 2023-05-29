@@ -35,7 +35,7 @@ Hooks.PlaySound = {
 
 Hooks.ChangeAudioVolume = {
   mounted() {
-    this.el.addEventListener("input", e => {
+    this.el.addEventListener("click", e => {
       let audioObject = document.getElementById(this.el.getAttribute("phx-value-audioid"))
 
       if (audioObject){
