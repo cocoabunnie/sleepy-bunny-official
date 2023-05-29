@@ -33,7 +33,7 @@ defmodule SleepybunnyofficialWeb.PageController do
   def github_link(assigns) do
     ~H"""
       <div class="fixed z-20 top-2 left-10 h-auto">
-        <a href="https://github.com/cocoabunnie/SleepBunny" target="_blank">
+        <a href="https://github.com/cocoabunnie/sleepy-bunny-official" target="_blank">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="35px" height="35px">
             <path d="M0 0h24v24H0z" fill="none"/>
             <path d="M12 0C5.4 0 0 5.4 0 12c0 5.3 3.4 9.8 8.1 11.4.6.1.9-.2.9-.6v-2.2c-3.3.7-4-1.6-4-1.6-.5-1.3-1.1-1.7-1.1-1.7-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .8.1-.7.4-1.1.7-1.4-2.4-.3-4.9-1.2-4.9-5.4 0-1.2.4-2.2 1.1-3-.1-.3-.5-1.4.1-2.9 0 0 .9-.3 3 .9 1-.3 2-.5 3-.5s2 .2 3 .5c2.1-1.2 3-.9 3-.9.6 1.5.2 2.6.1 2.9.6.7 1.1 1.7 1.1 3 0 4.2-2.5 5.1-4.9 5.4.4.3.8.9.8 1.8v2.7c0 .4.3.7 1 .6 4.8-1.6 8.1-6.1 8.1-11.4C24 5.4 18.6 0 12 0z"/>
