@@ -99,7 +99,7 @@ defmodule SleepybunnyofficialWeb.PageController do
               Disclaimer!! (^0^)
               <br/>
               <br/>
-              I noticed you're on mobile! Due to certain security protections on most mobile browsers, the volume control doesn't work on mobile at the moment.
+              I noticed you're on mobile! Due to certain security protections on most mobile browsers, the volume control most likely won't work on your mobile device at the moment.
               <br/>
               You can play the audio, but you'd have to control the audio with your device's built in volume control hardware (the buttons on the top/side)
               <br/>
