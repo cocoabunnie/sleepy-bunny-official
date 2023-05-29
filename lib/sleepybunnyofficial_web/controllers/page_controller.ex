@@ -47,7 +47,7 @@ defmodule SleepybunnyofficialWeb.PageController do
     ~H"""
       <div id="about-modal" class="absolute hidden flex justify-center items-center w-full h-full z-20 px-10 overflow-clip">
           <div class="w-[400px] bg-white border border-2 border-darkpurple rounded-lg z-10 p-3">
-            <button id="about-modal-close" class="flex justify-end w-full pr-1" phx-hook="ToggleAboutModal">
+            <button id="about-modal-close" class="flex justify-end w-full pr-1" phx-hook="ToggleAboutModal" phx-value-modalid="about-modal">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="24px" height="24px">
                 <path d="M0 0h24v24H0z" fill="none"/>
                 <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/>
@@ -79,7 +79,51 @@ defmodule SleepybunnyofficialWeb.PageController do
 
           </div>
 
-          <div id="about-modal-background" class="absolute opacity-20 bg-black w-full h-full overflow-y-hidden" phx-hook="ToggleAboutModal"/>
+          <div id="about-modal-background" class="absolute opacity-20 bg-black w-full h-full overflow-y-hidden" phx-hook="ToggleAboutModal" phx-value-modalid="about-modal"/>
+        </div>
+    """
+  end
+
+  def mobile_disclaimer_modal(assigns) do
+    ~H"""
+      <div id="mobile-disclaimer-modal" class="absolute lg:hidden flex justify-center items-center w-full h-full z-20 px-10 overflow-clip">
+          <div class="w-[400px] bg-white border border-2 border-darkpurple rounded-lg z-10 p-3">
+            <button id="mobile-modal-close" class="flex justify-end w-full pr-1" phx-hook="ToggleAboutModal" phx-value-modalid="mobile-disclaimer-modal">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="24px" height="24px">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/>
+              </svg>
+            </button>
+
+            <p>
+              Disclaimer!! (^0^)
+              <br/>
+              <br/>
+              I noticed you're on mobile! Due to certain security protections on most mobile browsers, the volume control doesn't work on mobile at the moment.
+              <br/>
+              You can play the zudio, but you'd hade to control the audio with your device's volume control (the buttons on the top/side)
+              <br/>
+              I'm currently working on fixing this issue, so hopefully it shouldn't be a problem soon! ^-^
+              <br/>
+              <br/>
+              Other than that, have fun!!
+              <br/>
+              <br/>
+            </p>
+
+            <div class="flex flex-row gap-2 ml-5">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FF69B4" width="24px" height="24px">
+                  <path d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M12 20s-8.6-5.4-8.6-8.6c0-2.5 2-4.5 4.5-4.5 1.6 0 3.1.8 4 2 1.3-1.2 3-2 4.9-2 2.5 0 4.5 2 4.5 4.5 0 3.2-8.6 8.6-8.6 8.6z"/>
+                </svg>
+              </span>
+              <p>Brianna</p>
+            </div>
+
+          </div>
+
+          <div id="mobile-modal-background" class="absolute opacity-20 bg-black w-full h-full overflow-y-hidden" phx-hook="ToggleAboutModal" phx-value-modalid="mobile-disclaimer-modal"/>
         </div>
     """
   end
@@ -91,8 +135,10 @@ defmodule SleepybunnyofficialWeb.PageController do
         <img class="opacity-40 animate-slow-spin h-[calc(300vh)] w-auto object-cover overflow-hide" src="https://res.cloudinary.com/doz6esktv/image/upload/v1685309633/sounds/StaryBackground_twj67t.png" alt="starry background"/>
       </div>
 
+      <.mobile_disclaimer_modal/>
+
       <.github_link/>
-      <button id="about-nav" class="fixed z-20 top-0 font-bold text-white top-2 right-10 uppercase" phx-hook="ToggleAboutModal">about</button>
+      <button id="about-nav" class="fixed z-20 top-0 font-bold text-white top-2 right-10 uppercase" phx-hook="ToggleAboutModal" phx-value-modalid="about-modal">about</button>
 
       <.about_modal/>
 

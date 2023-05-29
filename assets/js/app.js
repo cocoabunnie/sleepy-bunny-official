@@ -9,7 +9,7 @@ let Hooks = {}
 Hooks.ToggleAboutModal = {
   mounted() {
     this.el.addEventListener("click", e => {
-      let aboutModal = document.getElementById("about-modal");
+      let aboutModal = document.getElementById(this.el.getAttribute("phx-value-modalid"));
       aboutModal.classList.toggle("hidden");
     });
   }
