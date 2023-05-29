@@ -86,7 +86,7 @@ defmodule SleepybunnyofficialWeb.PageController do
 
   def mobile_disclaimer_modal(assigns) do
     ~H"""
-      <div id="mobile-disclaimer-modal" class="absolute lg:hidden flex justify-center items-center w-full h-full z-20 px-10 overflow-clip">
+      <div id="mobile-disclaimer-modal" class="absolute lg:hidden flex justify-center items-center w-full h-full z-50 px-10 overflow-clip">
           <div class="w-[400px] bg-white border border-2 border-darkpurple rounded-lg z-10 p-3">
             <button id="mobile-modal-close" class="flex justify-end w-full pr-1" phx-hook="ToggleAboutModal" phx-value-modalid="mobile-disclaimer-modal">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="24px" height="24px">
