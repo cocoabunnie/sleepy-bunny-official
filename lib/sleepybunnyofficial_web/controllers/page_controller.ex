@@ -96,7 +96,7 @@ defmodule SleepybunnyofficialWeb.PageController do
 
       <.about_modal/>
 
-      <div class="absolute flex flex-col gap-[30px] items-center w-fit h-fit max-w-[2000px]">
+      <div class="absolute flex flex-col gap-[20px] lg:gap-[100px] items-center w-fit h-fit max-w-[2000px]">
         <div class="w-fit flex justify-center">
           <img class="z-10 mt-[50px] h-[calc(20vh)] w-auto lg:h-[200px] lg:w-auto" src="https://res.cloudinary.com/doz6esktv/image/upload/v1685313306/sounds/Starry_Night_Header_vw5bzx.png" alt="Sleepy Bunny Header"/>
         </div>
