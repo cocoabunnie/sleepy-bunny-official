@@ -101,7 +101,7 @@ defmodule SleepybunnyofficialWeb.PageController do
               <br/>
               I noticed you're on mobile! Due to certain security protections on most mobile browsers, the volume control doesn't work on mobile at the moment.
               <br/>
-              You can play the zudio, but you'd hade to control the audio with your device's volume control (the buttons on the top/side)
+              You can play the audio, but you'd have to control the audio with your device's built in volume control hardware (the buttons on the top/side)
               <br/>
               I'm currently working on fixing this issue, so hopefully it shouldn't be a problem soon! ^-^
               <br/>
