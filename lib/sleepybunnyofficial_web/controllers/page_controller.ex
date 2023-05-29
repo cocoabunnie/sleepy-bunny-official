@@ -106,10 +106,17 @@ defmodule SleepybunnyofficialWeb.PageController do
 
           <div class="flex grow min-w-[100px]"/>
 
-          <div class="bg-white p-6 mb-5 rounded-lg flex flex-col justify-center items-center gap-3 h-fit">
+          <div class="hidden lg:flex bg-white p-6 mb-5 rounded-lg flex-col justify-center items-center gap-3 h-fit">
             <p>Sound Board</p>
             <%= for sound <- @all_sounds do %>
               <.sound_player name={sound.name} url={sound.url} volume={}/>
+            <% end %>
+          </div>
+
+          <div class="lg:hidden bg-white p-6 mb-5 rounded-lg flex flex-col justify-center items-center gap-3 h-fit">
+            <p>Sound Board</p>
+            <%= for sound <- @all_sounds do %>
+              <audio id={"audio-#{sound.name}"} src={sound.url} controls loop/>
             <% end %>
           </div>
         </div>
